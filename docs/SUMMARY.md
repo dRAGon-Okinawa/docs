@@ -29,7 +29,3 @@
 * [RaaG API](tutorials/raag-api/README.md)
   * [LangChain : Chat with a Farm](tutorials/raag-api/langchain-chat-with-a-farm.md)
   * [FAQ : SQL Ingestor as a RAG Data Provider](tutorials/raag-api/faq-sql-ingestor-as-a-rag-data-provider.md)
-
-## API
-
-* [About](api/about.md)
