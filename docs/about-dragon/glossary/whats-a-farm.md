@@ -29,3 +29,23 @@ flowchart LR
 * You can aggregate multiple kind of Silos in a Farm, for example, you can have a Silo for your documents about your products, another Silo for your blog posts (extracted from URLs of a WordPress blog), and another Silo for Frequently Asked Questions (FAQs).
 * There is no limit to the number of Silos you can have in a Farm, but you should keep in mind that the more Silos you have, the more time it will take to process the requests.
 {% endhint %}
+
+## Diagrams
+
+```mermaid
+classDiagram
+class FarmEntity {
+  +UUID uuid
+  +String name
+  +String raagIdentifier
+  +List~UUID~ silos
+  +LanguageModelType languageModel
+  +List~String~ languageModelSettings
+  +ChatMemoryStrategy chatMemoryStrategy
+  +List~String~ retrievalAugmentorSettings
+}
+class SiloEntity {
+  +UUID uuid
+}
+FarmEntity o-- SiloEntity
+```
