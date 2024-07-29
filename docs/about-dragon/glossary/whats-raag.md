@@ -104,17 +104,16 @@ flowchart LR
     subgraph raag1 [RaaG]
         endpoint[OpenAI Compliant Endpoint] --> Router
         subgraph farm1 [Farm]
-            Router-->Silo1
-            Router-->Silo2
             Router-->SiloN
-            click Silo1 href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
-            click Silo2 href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
+            Router-->GranaryN
+            Aggregator
             click SiloN href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
+            click GranaryN href "/about-dragon/glossary/whats-a-granary" "What's a Granary?"
         end
     end
-    Silo1-->Response
-    Silo2-->Response
-    SiloN-->Response
+    SiloN-->Aggregator
+    GranaryN-->Aggregator
+    Aggregator-->Response
 ```
 
 ## Tutorials
