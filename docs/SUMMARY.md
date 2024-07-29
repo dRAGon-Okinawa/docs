@@ -5,6 +5,7 @@
 * [About dRAGon](about-dragon/README.md)
   * [Glossary](about-dragon/glossary/README.md)
     * [What's a Silo?](about-dragon/glossary/whats-a-silo.md)
+    * [What's a Granary?](about-dragon/glossary/whats-a-granary.md)
     * [What's a Farm?](about-dragon/glossary/whats-a-farm.md)
     * [What's RaaG?](about-dragon/glossary/whats-raag.md)
 * [Roadmap](roadmap.md)
