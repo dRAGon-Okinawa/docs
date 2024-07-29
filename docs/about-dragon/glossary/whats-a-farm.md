@@ -9,15 +9,18 @@ flowchart LR
     Request-->Router
     subgraph farm1 [Farm]
         Router-->Silo1
-        Router-->Silo2
         Router-->SiloN
+        Router-->Granary1
+        Router-->GranaryN
+        Aggregator
         click Silo1 href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
-        click Silo2 href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
         click SiloN href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
     end
-    Silo1-->Response
-    Silo2-->Response
-    SiloN-->Response
+    Silo1-->Aggregator
+    SiloN-->Aggregator
+    Granary1-->Aggregator
+    GranaryN-->Aggregator
+    Aggregator-->Response
 ```
 
 {% hint style="info" %}
