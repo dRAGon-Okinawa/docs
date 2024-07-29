@@ -83,8 +83,6 @@ class PersistInMemoryEmbeddingStoreSettings {
 
 #### PGVectorEmbeddingStoreSettings
 
-
-
 ```mermaid
 classDiagram
 class PGVectorEmbeddingStoreSettings {
@@ -98,4 +96,24 @@ class PGVectorEmbeddingStoreSettings {
 
 ### EmbeddingSettings
 
+```mermaid
+classDiagram
+class EmbeddingSettings {
+  +String apiKey
+  +Integer chunkSize
+  +Integer chunkOverlap
+}
+```
+
 ### IngestorSettings
+
+#### DefaultIngestorLoaderSettings
+
+```mermaid
+classDiagram
+class DefaultIngestorLoaderSettings {
+  +String schedule
+  +String timezone
+  +Boolean indexNewDiscoveredDocuments
+}
+```
