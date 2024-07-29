@@ -14,7 +14,6 @@
     * [ ] &#x20;Web Search
     * [ ] &#x20;API Endpoints
     * [ ] &#x20;SQL Query
-    * [ ] &#x20;SQL Query Generator
 * [ ] &#x20;Documents Types
   * [x] &#x20;Text : Plain / PDF / Word
   * [x] &#x20;Presentations : PowerPoint
