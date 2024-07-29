@@ -15,6 +15,8 @@ flowchart LR
         Aggregator
         click Silo1 href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
         click SiloN href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
+        click Granary1 href "/about-dragon/glossary/whats-a-granary" "What's a Granary?"
+        click GranaryN href "/about-dragon/glossary/whats-a-granary" "What's a Granary?"
     end
     Silo1-->Aggregator
     SiloN-->Aggregator
