@@ -31,3 +31,20 @@ flowchart TB
     DocumentSplitter-- Split documents into chunks -->EmbeddingModel
     EmbeddingModel-- Vectorize each chunk for retrieval similarity -->VectorStore
 ```
+
+## Diagrams
+
+```mermaid
+classDiagram
+class Silo {
+    +UUID uuid
+    +String name
+    +VectorStoreType vectorStore
+    +EmbeddingModelType embeddingModel
+    +IngestorLoaderType ingestorLoader
+    +List~String~ vectorStoreSettings
+    +List~String~ embeddingSettings
+    +List~String~ ingestorSettings
+}
+
+```
