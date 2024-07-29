@@ -69,3 +69,33 @@ class IngestorLoaderType {
 }
 Silo *-- IngestorLoaderType
 ```
+
+### VectorStoreSettings
+
+#### PersistInMemoryEmbeddingStoreSettings
+
+```mermaid
+classDiagram
+class PersistInMemoryEmbeddingStoreSettings {
+  +int flushSecs
+}
+```
+
+#### PGVectorEmbeddingStoreSettings
+
+
+
+```mermaid
+classDiagram
+class PGVectorEmbeddingStoreSettings {
+  +String host
+  +Integer port
+  +String database
+  +String user
+  +String password
+}
+```
+
+### EmbeddingSettings
+
+### IngestorSettings
