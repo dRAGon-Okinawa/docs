@@ -32,6 +32,8 @@ flowchart LR
 
 ## Diagrams
 
+
+
 ```mermaid
 classDiagram
 class FarmEntity {
@@ -47,5 +49,41 @@ class FarmEntity {
 class SiloEntity {
   +UUID uuid
 }
+click SiloEntity href "/about-dragon/glossary/whats-a-silo" "What's a Silo?"
 FarmEntity o-- SiloEntity
+class LanguageModelType {
+    <<enumeration>>
+    OpenAiModel
+}
+FarmEntity *-- LanguageModelType
+class ChatMemoryStrategy {
+    <<enumeration>>
+    MaxMessages
+    MaxTokens
+}
+FarmEntity *-- ChatMemoryStrategy
+```
+
+### LanguageModelSettings
+
+```mermaid
+classDiagram
+class LanguageModelSettings {
+  +String apiKey
+  +String modelName
+  +String userIdentifier
+  +Double temperature
+  +Integer maxTokens
+}
+```
+
+### RetrievalAugmentorSettings
+
+```mermaid
+classDiagram
+class RetrievalAugmentorSettings {
+  +Boolean rewriteQuery
+  +Integer historyMaxMessages
+  +Integer historyMaxTokens
+}
 ```
