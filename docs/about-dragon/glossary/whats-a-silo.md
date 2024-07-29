@@ -46,5 +46,26 @@ class Silo {
     +List~String~ embeddingSettings
     +List~String~ ingestorSettings
 }
-
+class VectorStoreType {
+    <<enumeration>>
+    InMemoryEmbeddingStore
+    PersistInMemoryEmbeddingStore
+    PGVectorEmbeddingStore
+}
+Silo *-- VectorStoreType
+class EmbeddingModelType {
+    <<enumeration>>
+    BgeSmallEnV15QuantizedEmbeddingModel
+    OpenAiEmbeddingAda002Model
+    OpenAiEmbedding3SmallModel
+    OpenAiEmbedding3LargeModel
+}
+Silo *-- EmbeddingModelType
+class IngestorLoaderType {
+    <<enumeration>>
+    None
+    FileSystem
+    URL
+}
+Silo *-- IngestorLoaderType
 ```
