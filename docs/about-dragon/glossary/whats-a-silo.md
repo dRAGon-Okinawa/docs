@@ -36,7 +36,7 @@ flowchart TB
 
 ```mermaid
 classDiagram
-class Silo {
+class SiloEntity {
     +UUID uuid
     +String name
     +VectorStoreType vectorStore
@@ -52,7 +52,7 @@ class VectorStoreType {
     PersistInMemoryEmbeddingStore
     PGVectorEmbeddingStore
 }
-Silo *-- VectorStoreType
+SiloEntity *-- VectorStoreType
 class EmbeddingModelType {
     <<enumeration>>
     BgeSmallEnV15QuantizedEmbeddingModel
@@ -60,14 +60,23 @@ class EmbeddingModelType {
     OpenAiEmbedding3SmallModel
     OpenAiEmbedding3LargeModel
 }
-Silo *-- EmbeddingModelType
+SiloEntity *-- EmbeddingModelType
 class IngestorLoaderType {
     <<enumeration>>
     None
     FileSystem
     URL
 }
-Silo *-- IngestorLoaderType
+SiloEntity *-- IngestorLoaderType
+class DocumentEntity {
+  +UUID uuid
+  +UUID siloIdentifier
+  +String name
+  +String location
+  +Boolean allowIndexing = true
+  +Date lastSeen
+}
+SiloEntity o-- DocumentEntity
 ```
 
 ### VectorStoreSettings
