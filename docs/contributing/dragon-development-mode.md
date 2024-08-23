@@ -46,6 +46,9 @@ gradle bootRun
 gradle bootRun -x :frontend:pnpmBuild -x :backend:copyWebApp
 
 # Open your browser at http://localhost:1985/api/swagger-ui.html to access the Backend API server
+
+# To continuously build your changes, open a new terminal :
+gradle backend:bootJar -continuous -xtest -x :frontend:pnpmBuild -x :backend:copyWebApp
 ```
 
 ### Frontend Only
