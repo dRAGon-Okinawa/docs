@@ -8,6 +8,8 @@
     * [What's a Granary?](about-dragon/glossary/whats-a-granary.md)
     * [What's a Farm?](about-dragon/glossary/whats-a-farm.md)
     * [What's RaaG?](about-dragon/glossary/whats-raag.md)
+    * [Farm Glossary](about-dragon/glossary/farm-glossary/README.md)
+      * [Raag Identifier](about-dragon/glossary/farm-glossary/raag-identifier.md)
 * [Roadmap](roadmap.md)
 
 ## Commands
