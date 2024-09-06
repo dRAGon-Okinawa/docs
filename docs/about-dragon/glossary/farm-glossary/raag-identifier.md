@@ -6,7 +6,7 @@ description: >-
 
 # RaaG Identifier
 
-Identifier of your Farm RaaG that will be used for your API calls like this one :
+This identifier will be used for your API calls like this one :
 
 ```python
 from langchain_openai import OpenAI
