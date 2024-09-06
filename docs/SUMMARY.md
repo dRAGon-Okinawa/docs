@@ -10,6 +10,7 @@
     * [What's RaaG?](about-dragon/glossary/whats-raag.md)
     * [Farm Glossary](about-dragon/glossary/farm-glossary/README.md)
       * [RaaG Identifier](about-dragon/glossary/farm-glossary/raag-identifier.md)
+      * [Chat Memory Strategy](about-dragon/glossary/farm-glossary/chat-memory-strategy.md)
 * [Roadmap](roadmap.md)
 
 ## Commands
