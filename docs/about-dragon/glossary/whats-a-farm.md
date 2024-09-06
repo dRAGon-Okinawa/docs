@@ -44,6 +44,7 @@ class FarmEntity {
   +LanguageModelType languageModel
   +List~String~ languageModelSettings
   +ChatMemoryStrategy chatMemoryStrategy
+  +QueryRouterType queryRouter
   +List~String~ retrievalAugmentorSettings
 }
 class SiloEntity {
@@ -62,6 +63,12 @@ class ChatMemoryStrategy {
     MaxTokens
 }
 FarmEntity *-- ChatMemoryStrategy
+class QueryRouterType {
+    <<enumeration>>
+    Default
+    LanguageModel
+}
+FarmEntity *-- QueryRouterType
 ```
 
 ### LanguageModelSettings
