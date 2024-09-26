@@ -42,3 +42,11 @@ All Silos will be used to find relevant documents on. This strategy is similar t
 Related Retrieval Augmentor Setting :\
 `languageQueryRouterFallbackStrateg`=`ROUTE_TO_ALL`
 {% endhint %}
+
+### Language Query Router Prompt Template
+
+[Default prompt template](https://github.com/langchain4j/langchain4j/blob/11855157dd71eb52d603c981a4e3ac561a336107/langchain4j-core/src/main/java/dev/langchain4j/rag/query/router/LanguageModelQueryRouter.java#L47) for the Language Query Router could be overridden by using this Retrieval Augmentor Setting inside your Farm :
+
+{% hint style="info" %}
+`languageQueryRouterPromptTemplate` = `Your Prompt Goes Here`
+{% endhint %}
