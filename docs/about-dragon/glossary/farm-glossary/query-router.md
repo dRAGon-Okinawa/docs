@@ -21,14 +21,24 @@ If LLM is unable to make a choice (no relevant Silo or network error) you can se
 Farm will refused to reply user query, the RaaG pipeline will fail to reply.
 
 {% hint style="info" %}
-To use it, add this Retrieval Augmentor setting :\
-`languageQueryRouterFallbackStrateg`= `FAIL`
+To use it, add this Retrieval Augmentor Setting to your farm :\
+`languageQueryRouterFallbackStrateg`=`FAIL`
 {% endhint %}
 
 #### DO\_NOT\_ROUTE
 
 Farm will NOT use any Silo to reply. Only the LLM knowledge will.
 
+{% hint style="info" %}
+Related Retrieval Augmentor Setting :\
+`languageQueryRouterFallbackStrateg`=`DO_NOT_ROUTE`
+{% endhint %}
+
 #### ROUTE\_TO\_ALL
 
 All Silos will be used to find relevant documents on. This strategy is similar to choosing 'DEFAULT' as the Query Router type. Useful to check over all Silos if user query doesn't contain words that the LLM could use to match on.
+
+{% hint style="info" %}
+Related Retrieval Augmentor Setting :\
+`languageQueryRouterFallbackStrateg`=`ROUTE_TO_ALL`
+{% endhint %}
