@@ -11,6 +11,7 @@
     * [Farm Glossary](about-dragon/glossary/farm-glossary/README.md)
       * [RaaG Identifier](about-dragon/glossary/farm-glossary/raag-identifier.md)
       * [Chat Memory Strategy](about-dragon/glossary/farm-glossary/chat-memory-strategy.md)
+      * [Query Router](about-dragon/glossary/farm-glossary/query-router.md)
     * [Silo Glossary](about-dragon/glossary/silo-glossary/README.md)
       * [Silo Description](about-dragon/glossary/silo-glossary/silo-description.md)
 * [Roadmap](roadmap.md)
