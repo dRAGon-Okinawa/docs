@@ -22,7 +22,7 @@ Farm will refused to reply user query, the RaaG pipeline will fail to reply.
 
 {% hint style="info" %}
 To use it, add this Retrieval Augmentor setting :\
-\`languageQueryRouterFallbackStrategy\` = \`FAIL\`
+`languageQueryRouterFallbackStrateg`= `FAIL`
 {% endhint %}
 
 #### DO\_NOT\_ROUTE
