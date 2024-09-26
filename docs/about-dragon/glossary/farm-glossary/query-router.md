@@ -1,5 +1,5 @@
 ---
-description: Query Router to best choose the Silo to query based on the user request.
+description: Query Router to best choose Silos based on the user request.
 ---
 
 # Query Router
@@ -19,6 +19,11 @@ If LLM is unable to make a choice (no relevant Silo or network error) you can se
 #### FAIL (Default)
 
 Farm will refused to reply user query, the RaaG pipeline will fail to reply.
+
+{% hint style="info" %}
+To use it, add this Retrieval Augmentor setting :\
+\`languageQueryRouterFallbackStrategy\` = \`FAIL\`
+{% endhint %}
 
 #### DO\_NOT\_ROUTE
 
